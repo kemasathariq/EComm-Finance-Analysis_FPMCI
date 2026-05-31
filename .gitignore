@@ -1,0 +1,20 @@
+# Airflow logs
+logs/
+
+# Raw dataset (too large, download link is in README)
+data/raw/
+
+# Python cache
+dags/__pycache__/
+**/__pycache__/
+*.pyc
+*.pyo
+
+# Metabase plugin binary
+metabase/plugins/
+
+# macOS
+.DS_Store
+
+# Docker volumes (managed by Docker, not code)
+{dags,plugins,logs,data

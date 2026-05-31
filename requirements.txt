@@ -1,0 +1,6 @@
+clickhouse-connect==0.7.0
+pandas==2.1.4
+numpy==1.26.2
+jupyter==1.0.0
+matplotlib==3.8.2
+seaborn==0.13.0
