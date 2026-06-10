@@ -1,0 +1,6 @@
+category,peak_months,peak_month_nums,top_month_revenue,top_month,seasonal_event
+watches_gifts,"May, July, March","[5, 7, 3]",159416.0,May,Dia das Mães (2nd Sunday) — biggest gifting event after BF
+health_beauty,"August, May, June","[8, 5, 6]",169684.0,August,"Dia dos Pais (2nd Sunday) — electronics, tools, sports"
+computers_accessories,"March, February, May","[3, 2, 5]",113645.0,March,Back-to-school close / Easter prep
+sports_leisure,"March, January, May","[3, 1, 5]",108986.0,March,Back-to-school close / Easter prep
+bed_bath_table,"July, August, June","[7, 8, 6]",118609.0,July,"Férias de julho — travel, toys, leisure"

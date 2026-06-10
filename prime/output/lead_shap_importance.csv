@@ -1,0 +1,7 @@
+feature,mean_abs_shap,mean_shap,rank
+business_segment,0.2633315,-0.0014034363,1
+lead_behaviour_profile,0.20773344,0.0026631874,2
+lead_type,0.19570906,0.002275415,3
+log_revenue,0.15738226,-0.0018183768,4
+business_type,0.08887594,0.00045064304,5
+has_revenue,0.08434798,-0.00092589046,6

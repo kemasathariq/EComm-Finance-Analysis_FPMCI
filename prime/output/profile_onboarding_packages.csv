@@ -1,0 +1,10 @@
+lead_behaviour_profile,count,avg_days,onboarding_package
+eagle,123,36.0,"Fast-Track - dedicated SDR, 7-day onboarding, priority listing"
+cat,407,40.7,"Fast-Track - structured 2-week onboarding, category advisor"
+shark,24,75.4,"High-Touch Support - 60-day intensive, legal/compliance review"
+wolf,95,83.9,"Standard Nurture - 90-day drip sequence, bi-weekly check-in"
+"eagle, wolf",3,149.3,"Extended Nurture - 120-day sequence, revenue-focused advisor"
+"shark, cat",1,181.0,"High-Touch Support - compliance-first, 45-day structured path"
+"cat, wolf",8,185.8,"Extended Nurture - 120-day sequence, category + ops support"
+"eagle, cat",3,199.0,"Fast-Track Plus - 3-week onboarding, early ad credit"
+"shark, wolf",1,341.0,"High-Touch Support - longest cycle expected, executive sponsor"

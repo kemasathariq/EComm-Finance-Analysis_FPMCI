@@ -1,0 +1,11 @@
+origin,total_leads,converted_leads,conversion_rate_pct,log_volume,efficiency_score,rank,budget_allocation_pct,action_priority,recommendation
+unknown,1159,193,16.65,7.0562,1.175019,1,22.0,P0 - Fix UTM tracking (Week 1),FIX UTM FIRST - 16.7% conversion but 0% attribution. Enforce UTM params on all landing pages before any spend increase.
+organic_search,2296,271,11.8,7.7394,0.913492,2,17.1,P1 - Scale now,INCREASE - Rank 2 by efficiency. Scale budget 20-30%.
+paid_search,1586,195,12.3,7.3696,0.906098,3,17.0,P2 - Maintain and monitor,MAINTAIN - Solid efficiency. Review quarterly.
+direct_traffic,499,56,11.22,6.2146,0.69743,4,13.1,P2 - Maintain and monitor,MAINTAIN - Solid efficiency. Review quarterly.
+referral,284,24,8.45,5.6525,0.477676,5,9.0,P3 - Reduce and reallocate,REDUCE - Below-median efficiency. Reallocate to Rank 1-2 channels. A/B test creative before cutting.
+social,1350,75,5.56,7.2086,0.400478,6,7.5,P3 - Reduce and reallocate,REDUCE - Below-median efficiency. Reallocate to Rank 1-2 channels. A/B test creative before cutting.
+display,118,6,5.08,4.7791,0.243005,7,4.6,P3 - Reduce and reallocate,REDUCE - Below-median efficiency. Reallocate to Rank 1-2 channels. A/B test creative before cutting.
+other_publicities,65,3,4.62,4.1897,0.193371,8,3.6,P3 - Reduce and reallocate,REDUCE - Below-median efficiency. Reallocate to Rank 1-2 channels. A/B test creative before cutting.
+email,493,15,3.04,6.2025,0.188717,9,3.5,P3 - Reduce and reallocate,REDUCE - Below-median efficiency. Reallocate to Rank 1-2 channels. A/B test creative before cutting.
+other,150,4,2.67,5.0173,0.133795,10,2.5,P3 - Reduce and reallocate,REDUCE - Below-median efficiency. Reallocate to Rank 1-2 channels. A/B test creative before cutting.

@@ -25,7 +25,7 @@ dag = DAG(
 )
 
 
-# ── Task 0: Schema Setup ───────────────────────────────────────
+# Task 0: Schema Setup
 def setup_schema(**context):
     import clickhouse_connect
 
@@ -37,7 +37,7 @@ def setup_schema(**context):
         password='dustinia123',
     )
 
-    # Evolve existing mart tables — safe to run repeatedly
+    # Evolve existing mart tables - safe to run repeatedly
     migrations = [
         "ALTER TABLE dustinia.mart_customer_payment_profile "
         "ADD COLUMN IF NOT EXISTS avg_review_score Float64 DEFAULT 0",
@@ -192,7 +192,7 @@ def setup_schema(**context):
     logging.info("Schema setup complete.")
 
 
-# ── Task 1: Extract ────────────────────────────────────────────
+# Task 1: Extract
 def extract_raw_data(**context):
     required_files = [
         'orders.csv', 'order_items.csv', 'order_payments.csv',
@@ -221,7 +221,7 @@ def extract_raw_data(**context):
     logging.info("All required files present.")
 
 
-# ── Task 2: Validate ───────────────────────────────────────────
+# Task 2: Validate
 def validate_data(**context):
     import pandas as pd
 
@@ -246,7 +246,7 @@ def validate_data(**context):
     context['ti'].xcom_push(key='payments_count', value=len(payments))
 
 
-# ── Task 3: Load Raw to ClickHouse ─────────────────────────────
+# Task 3: Load Raw to ClickHouse
 def load_raw_to_clickhouse(**context):
     import pandas as pd
     import clickhouse_connect
@@ -270,7 +270,7 @@ def load_raw_to_clickhouse(**context):
         'geolocation.csv': {'geolocation_zip_code_prefix': str},
     }
 
-    # Bug in source data: products.csv ships with two typos —
+    # Bug in source data: products.csv ships with two typos -
     # "product_name_lenght" and "product_description_lenght" (missing the h).
     col_renames = {
         'products.csv': {
@@ -322,7 +322,7 @@ def load_raw_to_clickhouse(**context):
     logging.info("All raw tables loaded successfully.")
 
 
-# ── Task 4a: Transform - Customer Payment Profiles ─────────────
+# Task 4a: Transform - Customer Payment Profiles
 def transform_customer_profiles(**context):
     import pandas as pd
     import clickhouse_connect
@@ -394,7 +394,7 @@ def transform_customer_profiles(**context):
         debit_card_orders=('debit_card_flag', 'sum'),
     ).reset_index()
 
-    # Fill nulls in integer columns before inserting — left joins can produce
+    # Fill nulls in integer columns before inserting - left joins can produce
     # NaN when an order has no matching payment or item record.
     int_cols = [
         'total_orders', 'credit_card_orders', 'boleto_orders',
@@ -435,7 +435,7 @@ def transform_customer_profiles(**context):
     client.close()
 
 
-# ── Task 4b: Transform - Order Payment Detail ──────────────────
+# Task 4b: Transform - Order Payment Detail
 def transform_order_payments(**context):
     import pandas as pd
     import clickhouse_connect
@@ -491,7 +491,7 @@ def transform_order_payments(**context):
     client.close()
 
 
-# ── Task 4c: Transform - Geographic Payment Summary ────────────
+# Task 4c: Transform - Geographic Payment Summary
 def transform_geo_summary(**context):
     import pandas as pd
     import clickhouse_connect
@@ -527,7 +527,7 @@ def transform_geo_summary(**context):
     client.close()
 
 
-# ── Task 4d: Transform - Monthly Revenue by Payment Type ───────
+# Task 4d: Transform - Monthly Revenue by Payment Type
 def transform_monthly_revenue(**context):
     import pandas as pd
     import clickhouse_connect
@@ -564,7 +564,7 @@ def transform_monthly_revenue(**context):
     client.close()
 
 
-# ── Task 4e: Transform - HV Customer Category Preference ───────
+# Task 4e: Transform - HV Customer Category Preference
 def transform_hv_category_preference(**context):
     import pandas as pd
     import clickhouse_connect
@@ -618,7 +618,7 @@ def transform_hv_category_preference(**context):
     client.close()
 
 
-# ── Task 4f: Transform - Seller Acquisition ────────────────────
+# Task 4f: Transform - Seller Acquisition
 def transform_seller_acquisition(**context):
     import pandas as pd
     import clickhouse_connect
@@ -667,7 +667,7 @@ def transform_seller_acquisition(**context):
     client.close()
 
 
-# ── Task 4g: Transform - Seller Performance ───────────────────
+# Task 4g: Transform - Seller Performance
 def transform_seller_performance(**context):
     import pandas as pd
     import clickhouse_connect
@@ -735,7 +735,7 @@ def transform_seller_performance(**context):
     client.close()
 
 
-# ── Task 4h: Transform - Repeat Customer ──────────────────────
+# Task 4h: Transform - Repeat Customer
 def transform_repeat_customer(**context):
     import pandas as pd
     import clickhouse_connect
@@ -787,7 +787,7 @@ def transform_repeat_customer(**context):
     client.close()
 
 
-# ── Task 4i: Transform - Product Price Range ──────────────────
+# Task 4i: Transform - Product Price Range
 def transform_product_price_range(**context):
     import pandas as pd
     import clickhouse_connect
@@ -848,7 +848,7 @@ def transform_product_price_range(**context):
     client.close()
 
 
-# ── Task 4j: Transform - Review by Segment ────────────────────
+# Task 4j: Transform - Review by Segment
 def transform_review_by_segment(**context):
     import pandas as pd
     import clickhouse_connect
@@ -923,7 +923,7 @@ def transform_review_by_segment(**context):
     client.close()
 
 
-# ── Task 4k: Transform - MQL Funnel by Origin ─────────────────
+# Task 4k: Transform - MQL Funnel by Origin
 def transform_mql_funnel(**context):
     import pandas as pd
     import clickhouse_connect
@@ -975,7 +975,7 @@ def transform_mql_funnel(**context):
     client.close()
 
 
-# ── Task 4l: Transform - MQL Monthly Trend ────────────────────
+# Task 4l: Transform - MQL Monthly Trend
 def transform_mql_monthly(**context):
     import pandas as pd
     import clickhouse_connect
@@ -1014,7 +1014,7 @@ def transform_mql_monthly(**context):
     client.close()
 
 
-# ── Task 4m: Transform - Lead Behaviour Profile ───────────────
+# Task 4m: Transform - Lead Behaviour Profile
 def transform_lead_behaviour(**context):
     import pandas as pd
     import clickhouse_connect
@@ -1051,7 +1051,7 @@ def transform_lead_behaviour(**context):
     client.close()
 
 
-# ── Task 5: Export Marts to PostgreSQL ────────────────────────
+# Task 5: Export Marts to PostgreSQL
 def export_marts_to_postgres(**context):
     import pandas as pd
     import clickhouse_connect
@@ -1097,7 +1097,7 @@ def export_marts_to_postgres(**context):
     logging.info("All marts exported to PostgreSQL.")
 
 
-# ── Task 6: Compute Payment Leakage ───────────────────────────
+# Task 6: Compute Payment Leakage
 def transform_payment_leakage(**context):
     import pandas as pd
     import clickhouse_connect
@@ -1142,8 +1142,7 @@ def transform_payment_leakage(**context):
     client.close()
 
 
-# ── Task definitions ───────────────────────────────────────────
-
+# Task definitions
 t0_schema = PythonOperator(
     task_id='setup_schema',
     python_callable=setup_schema,
@@ -1259,17 +1258,14 @@ t6_export = PythonOperator(
 )
 
 
-# ── Execution order ────────────────────────────────────────────
+# Execution order
 #
-#  t0_schema
-#      └── t1_extract
-#              └── t2_validate
-#                      └── t3_load
-#                            ├── t4a_customer ──► t4c_geo ──► t5_leakage
-#                            ├── t4b_orders ──────────────► t5_leakage
-#                            │        └── t4d_monthly
-#                            │        └── (+ t4a_customer) ► t4e_hv_cat
-#                            └── t4f_seller_acq
+#  t0_schema -> t1_extract -> t2_validate -> t3_load
+#    t3_load -> t4a_customer -> t4c_geo -> t5_leakage
+#    t3_load -> t4b_orders -> t5_leakage
+#    t4b_orders -> t4d_monthly
+#    t4a_customer + t4b_orders -> t4e_hv_cat
+#    t3_load -> t4f_seller_acq
 
 t0_schema >> t1_extract >> t2_validate >> t3_load
 

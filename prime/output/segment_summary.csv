@@ -1,0 +1,5 @@
+audience_segment,customer_count,avg_spend,avg_order_value,pct_credit_card,pct_installments,pct_hvc_category,strategy
+rc_single_pay,69749,89.0,88.9,75.1,0.451,0.0,Credit card + installment education email. Low-value promotional entry offer to encourage repeat. Re-engagement trigger at 90 days inactivity.
+hvc_one_time,21827,391.0,390.7,81.4,0.712,0.399,Win-back campaign at 30d post-purchase. Personalized category recommendation based on first-order category. Incentivize second order with 10% category voucher.
+hvc_loyal,1776,415.0,194.8,77.3,0.71,0.471,Exclusive early access to Black Friday + Dia das Mães campaigns. 12-installment option pre-surfaced. Dedicated retention email cadence (bi-weekly).
+rc_upgrade_path,1049,125.0,61.4,71.7,0.536,0.0,Upgrade to installment plan at next checkout. Show HVC threshold progress ('R$X away from HVC status'). Target with mid-tier category upsell (C. 150-500 bucket).

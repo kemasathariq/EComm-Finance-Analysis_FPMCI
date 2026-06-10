@@ -1,0 +1,13 @@
+calendar_month,month_name,intensity_score,intensity_band,seasonal_event,pre_launch_days,flash_sale_flag,avg_revenue,avg_orders,campaign_budget_weight,data_points
+1,January,5.7,MEDIUM,Liquidação de Janeiro / Summer clearance,14,False,610485.0,3954.0,8.0,2
+2,February,5.1,MEDIUM,Carnaval season — electronics + fashion pre-event,14,False,626901.0,4144.0,7.1,2
+3,March,6.6,MEDIUM,Back-to-school close / Easter prep,14,False,780138.0,4864.0,9.2,2
+4,April,6.6,MEDIUM,"Páscoa (Easter) — chocolate, home, gifts",14,False,775199.0,4625.0,9.2,2
+5,May,7.0,MEDIUM,Dia das Mães (2nd Sunday) — biggest gifting event after BF,14,True,856889.0,5202.0,9.8,2
+6,June,6.1,MEDIUM,"Dia dos Namorados (June 12) — beauty, jewelry, electronics",14,False,758068.0,4662.0,8.5,2
+7,July,6.4,MEDIUM,"Férias de julho — travel, toys, leisure",14,False,805565.0,5074.0,8.9,2
+8,August,6.4,MEDIUM,"Dia dos Pais (2nd Sunday) — electronics, tools, sports",14,False,823126.0,5316.0,8.9,2
+9,September,3.3,LOW,Volta às aulas / Spring promo,7,False,236308.0,1397.0,4.6,3
+10,October,4.4,LOW,"Dia das Crianças (Oct 12) — toys, games, apparel",7,False,402689.0,2392.0,6.1,2
+11,November,10.0,HIGH,Black Friday — highest sales event of the year,21,True,1162150.0,7361.0,14.0,1
+12,December,4.0,LOW,Natal / Christmas + end-of-year clearance,7,False,425361.0,2786.0,5.6,2

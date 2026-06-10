@@ -1,0 +1,47 @@
+analysis_date,state,payment_type,order_count,avg_value,leakage_score,updated_at,pct_below_national_avg,severity,alert_flag,revenue_at_risk_R$,remediation,alert_rank
+2026-05-28,SP,credit_card,31912,148.1182254324392,2551.241484851714,2026-05-28 06:44:33,8.0,CRITICAL,True,410764.07,"Push 12-installment plan for SP credit card orders above R$ 180.52. 8.0% below national avg across 31,912 transactions.",1
+2026-05-28,SP,boleto,8205,132.18823156611822,1467.8514170403655,2026-05-28 06:44:33,17.89,HIGH,True,236318.51,Offer SP boleto customers credit-card-with-installment upgrade at checkout. 17.9% below national avg.,2
+2026-05-28,SP,voucher,866,113.41247113163972,255.9246848877946,2026-05-28 06:44:33,29.55,LOW,True,41202.14,SP voucher: 29.6% below national avg. Investigate checkout flow for friction points.,3
+2026-05-28,SP,debit_card,759,116.80963109354413,208.28719357463396,2026-05-28 06:44:33,27.44,LOW,True,33532.9,SP debit_card: 27.4% below national avg. Investigate checkout flow for friction points.,4
+2026-05-28,MG,boleto,2304,147.79457465277778,188.827875887861,2026-05-28 06:44:33,8.2,LOW,True,30402.26,MG boleto: 8.2% below national avg. Monitor weekly.,5
+2026-05-28,RS,boleto,1359,141.52164091243563,164.33247096048376,2026-05-28 06:44:33,12.09,LOW,True,26457.5,RS boleto: 12.1% below national avg. Investigate checkout flow for friction points.,6
+2026-05-28,PR,boleto,1118,139.2055366726297,151.27475456215956,2026-05-28 06:44:33,13.53,LOW,True,24355.03,PR boleto: 13.5% below national avg. Investigate checkout flow for friction points.,7
+2026-05-28,SC,boleto,840,136.08807142857142,129.92521147204968,2026-05-28 06:44:33,15.47,LOW,True,20917.62,SC boleto: 15.5% below national avg. Investigate checkout flow for friction points.,8
+2026-05-28,RJ,boleto,2163,151.9287008784096,121.72699962700436,2026-05-28 06:44:33,5.63,LOW,True,19599.59,RJ boleto: 5.6% below national avg. Monitor weekly.,9
+2026-05-28,RJ,voucher,310,116.99151612903226,84.72094766348847,2026-05-28 06:44:33,27.33,LOW,True,13639.53,RJ voucher: 27.3% below national avg. Investigate checkout flow for friction points.,10
+2026-05-28,MG,voucher,209,104.42928229665073,73.4269623586699,2026-05-28 06:44:33,35.13,LOW,True,11821.19,MG voucher: 35.1% below national avg. Investigate checkout flow for friction points.,11
+2026-05-28,DF,boleto,396,133.6285606060606,67.30036345683547,2026-05-28 06:44:33,17.0,LOW,True,10835.13,DF boleto: 17.0% below national avg. Investigate checkout flow for friction points.,12
+2026-05-28,PR,voucher,97,103.31865979381443,34.74772233548206,2026-05-28 06:44:33,35.82,LOW,True,5594.12,PR voucher: 35.8% below national avg. Investigate checkout flow for friction points.,13
+2026-05-28,BA,voucher,92,102.6529347826087,33.337043744840656,2026-05-28 06:44:33,36.24,LOW,True,5367.01,BA voucher: 36.2% below national avg. Investigate checkout flow for friction points.,14
+2026-05-28,BA,boleto,614,154.75521172638437,23.773910562038985,2026-05-28 06:44:33,3.87,LOW,False,3828.16,BA boleto: 3.9% below national avg. Monitor weekly.,15
+2026-05-28,GO,boleto,449,153.5587750556793,20.72203774902787,2026-05-28 06:44:33,4.62,LOW,False,3336.62,GO boleto: 4.6% below national avg. Monitor weekly.,16
+2026-05-28,ES,voucher,39,103.03897435897436,14.038488387900246,2026-05-28 06:44:33,36.0,LOW,True,2260.09,ES voucher: 36.0% below national avg. Investigate checkout flow for friction points.,17
+2026-05-28,PE,voucher,33,92.60060606060608,14.018413143523816,2026-05-28 06:44:33,42.48,LOW,True,2256.85,PE voucher: 42.5% below national avg. Investigate checkout flow for friction points.,18
+2026-05-28,BA,debit_card,53,133.0835849056604,9.18678646612863,2026-05-28 06:44:33,17.33,LOW,True,1479.04,BA debit_card: 17.3% below national avg. Investigate checkout flow for friction points.,19
+2026-05-28,PR,debit_card,74,142.4627027027027,8.515631083696858,2026-05-28 06:44:33,11.51,LOW,True,1371.02,PR debit_card: 11.5% below national avg. Investigate checkout flow for friction points.,20
+2026-05-28,MS,voucher,15,72.16866666666667,8.275737046114902,2026-05-28 06:44:33,55.17,LOW,True,1332.32,MS voucher: 55.2% below national avg. Investigate checkout flow for friction points.,21
+2026-05-28,GO,voucher,40,132.5665,7.061901106622122,2026-05-28 06:44:33,17.66,LOW,True,1136.94,GO voucher: 17.7% below national avg. Investigate checkout flow for friction points.,22
+2026-05-28,DF,debit_card,17,97.73,6.679955553920686,2026-05-28 06:44:33,39.29,LOW,True,1075.42,DF debit_card: 39.3% below national avg. Investigate checkout flow for friction points.,23
+2026-05-28,RS,voucher,83,152.74060240963854,4.252397744182875,2026-05-28 06:44:33,5.12,LOW,True,684.7,RS voucher: 5.1% below national avg. Monitor weekly.,24
+2026-05-28,PA,voucher,23,131.94565217391303,4.149291937126176,2026-05-28 06:44:33,18.04,LOW,True,668.02,PA voucher: 18.0% below national avg. Investigate checkout flow for friction points.,25
+2026-05-28,MS,boleto,175,157.69594285714285,3.5792794258387803,2026-05-28 06:44:33,2.05,LOW,False,576.46,MS boleto: 2.0% below national avg. Monitor weekly.,26
+2026-05-28,PI,debit_card,11,111.99636363636364,3.347534951762735,2026-05-28 06:44:33,30.43,LOW,True,538.93,PI debit_card: 30.4% below national avg. Investigate checkout flow for friction points.,27
+2026-05-28,SP,not_defined,3,0.0,3.0,2026-05-28 06:44:33,0.0,LOW,False,482.97,CRITICAL ROUTING ERROR - not_defined linked to review scores 1.0-1.67. Escalate to payment ops. Manual review within 24h SLA.,28
+2026-05-28,MS,debit_card,11,135.8063636363636,1.7206500522661443,2026-05-28 06:44:33,15.64,LOW,True,277.02,MS debit_card: 15.6% below national avg. Investigate checkout flow for friction points.,29
+2026-05-28,MA,debit_card,4,102.34,1.4572120100113586,2026-05-28 06:44:33,36.43,LOW,True,234.6,MA debit_card: 36.4% below national avg. Investigate checkout flow for friction points.,30
+2026-05-28,AL,voucher,3,91.59333333333332,1.2931715754126472,2026-05-28 06:44:33,43.11,LOW,True,208.19,AL voucher: 43.1% below national avg. Investigate checkout flow for friction points.,31
+2026-05-28,PE,debit_card,19,151.42526315789473,1.128677764714383,2026-05-28 06:44:33,5.94,LOW,True,181.73,PE debit_card: 5.9% below national avg. Monitor weekly.,32
+2026-05-28,AM,debit_card,2,76.00999999999999,1.055709814739903,2026-05-28 06:44:33,52.79,LOW,True,169.96,AM debit_card: 52.8% below national avg. Investigate checkout flow for friction points.,33
+2026-05-28,DF,voucher,33,155.97515151515154,1.0276834905468608,2026-05-28 06:44:33,3.12,LOW,False,165.49,DF voucher: 3.1% below national avg. Monitor weekly.,34
+2026-05-28,SE,voucher,8,140.58124999999998,1.0141036912724126,2026-05-28 06:44:33,12.68,LOW,True,163.27,SE voucher: 12.7% below national avg. Investigate checkout flow for friction points.,35
+2026-05-28,SP,unknown,1,0.0,1.0,2026-05-28 06:44:33,0.0,LOW,False,160.99,CRITICAL ROUTING ERROR - unknown linked to review scores 1.0-1.67. Escalate to payment ops. Manual review within 24h SLA.,36
+2026-05-28,MG,debit_card,139,159.92374100719425,0.9194563595526986,2026-05-28 06:44:33,0.66,LOW,False,148.21,MG debit_card: 0.7% below national avg. Monitor weekly.,37
+2026-05-28,CE,debit_card,20,153.6595,0.9105173369327896,2026-05-28 06:44:33,4.55,LOW,False,146.61,CE debit_card: 4.5% below national avg. Monitor weekly.,38
+2026-05-28,MT,debit_card,6,139.83,0.7885766370904082,2026-05-28 06:44:33,13.14,LOW,True,126.96,MT debit_card: 13.1% below national avg. Investigate checkout flow for friction points.,39
+2026-05-28,AC,voucher,2,97.71,0.7861255887151154,2026-05-28 06:44:33,39.31,LOW,True,126.56,AC voucher: 39.3% below national avg. Investigate checkout flow for friction points.,40
+2026-05-28,AM,voucher,1,49.14,0.6947610860170954,2026-05-28 06:44:33,69.48,LOW,True,111.85,AM voucher: 69.5% below national avg. Investigate checkout flow for friction points.,41
+2026-05-28,PI,voucher,8,149.705,0.5607176853380967,2026-05-28 06:44:33,7.01,LOW,True,90.28,PI voucher: 7.0% below national avg. Monitor weekly.,42
+2026-05-28,AP,voucher,1,71.14,0.5581054875713505,2026-05-28 06:44:33,55.81,LOW,True,89.85,AP voucher: 55.8% below national avg. Investigate checkout flow for friction points.,43
+2026-05-28,GO,debit_card,22,160.49727272727273,0.067149146544622,2026-05-28 06:44:33,0.31,LOW,False,10.84,GO debit_card: 0.3% below national avg. Monitor weekly.,44
+2026-05-28,PB,voucher,13,160.59538461538463,0.0317564045854829,2026-05-28 06:44:33,0.25,LOW,False,5.13,PB voucher: 0.2% below national avg. Monitor weekly.,45
+2026-05-28,ES,credit_card,1564,160.98649616368286,0.0209025094018246,2026-05-28 06:44:33,0.0,LOW,False,5.48,ES credit_card: 0.0% below national avg. Monitor weekly.,46

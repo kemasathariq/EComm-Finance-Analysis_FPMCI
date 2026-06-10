@@ -1,0 +1,5 @@
+tier,customer_count,customer_pct,avg_customer_points,hvc_in_tier_pct,seller_count,seller_pct,avg_seller_points,avg_seller_ad_credit_R$
+Platinum,32,0.0,6504.0,100.0,172,5.8,134694.0,13469.35
+Gold,517,0.5,2684.0,100.0,268,9.0,31920.0,3191.99
+Silver,8557,9.1,826.0,100.0,679,22.8,10289.0,1028.91
+Bronze,85295,90.4,189.0,17.0,1859,62.4,1703.0,170.28

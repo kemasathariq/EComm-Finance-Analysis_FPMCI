@@ -1,8 +1,10 @@
-# DustiniaDelixia Groceria — Finance Analyst Pipeline
+# DustiniaDelixia Groceria Finance Analyst Pipeline
 
 Final Project Lab MCI 2026 | Persona 1: Finance Analyst | ITS Surabaya
 
----
+Presentation: [here](https://canva.link/pnbzo7vmhnsq957)
+
+Google Drive Assets: [here](https://drive.google.com/drive/folders/1KyJ0nLg1_qmZh8NsVkujNM3AAa5_9gKi?usp=sharing)
 
 ## Business Problem
 
@@ -14,8 +16,6 @@ This pipeline was built to answer four questions:
 2. What payment methods do they prefer?
 3. Where are they located geographically?
 4. Where is the company losing potential revenue due to suboptimal payment options?
-
----
 
 ## Key Findings
 
@@ -29,8 +29,6 @@ This pipeline was built to answer four questions:
 | Highest leakage state | São Paulo — credit card orders 10.4% below national average (score: 2,551) |
 | Repeat customer rate (HVC) | 7.6% |
 | Repeat customer rate (Regular) | 1.5% |
-
----
 
 ## Architecture
 
@@ -56,8 +54,6 @@ schema: dustinia
 ```
 
 Why PostgreSQL as the Metabase bridge: Metabase's ClickHouse community driver is version-locked to specific Metabase releases (driver 1.4.0 for Metabase 0.49.x). To avoid fragile plugin dependencies, mart tables are mirrored to PostgreSQL after each pipeline run. Metabase uses its native PostgreSQL connector.
-
----
 
 ## Stack
 
